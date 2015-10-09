@@ -1,0 +1,8 @@
+duraark-pointcloud-viewer:
+  build: .
+  command: nodemon --watch /code app/index.js
+  ports:
+    - "5016:5016"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - .:/opt/duraark-pointcloud-viewer

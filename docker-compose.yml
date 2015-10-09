@@ -1,0 +1,7 @@
+duraark-pointcloud-viewer:
+  image: duraark/duraark-pointcloud-viewer:latest
+  ports:
+    - "5016:5016"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./dist:/opt/duraark-pointcloud-viewer
