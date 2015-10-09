@@ -5,3 +5,5 @@ duraark-pointcloud-viewer:
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - ./dist:/opt/duraark-pointcloud-viewer
+  volumes_from:
+    - /duraark-sessions:/duraark-sessions
