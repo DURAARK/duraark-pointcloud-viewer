@@ -1,6 +1,6 @@
 duraark-pointcloud-viewer:
   build: .
-  command: nodemon --watch /code app/index.js
+  command: nodemon -w /code app/index.js
   ports:
     - "5016:5016"
   volumes:

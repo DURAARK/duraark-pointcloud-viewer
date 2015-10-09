@@ -6,8 +6,8 @@ var express = require("express"),
     errorHandler = require('errorhandler'),
     methodOverride = require('method-override'),
     hostname = process.env.HOSTNAME || 'localhost',
-    port = parseInt(process.env.PORT, 10) || 9000,
-    publicDir = process.argv[2] || __dirname + '/../public';
+    port = parseInt(process.env.PORT, 10) || 5016,
+    publicDir = process.argv[2] || __dirname + '/../www';
 
 app.get("/", function (req, res) {
   res.redirect("./potree/examples/LAS12_Sample_withRGB_Quick_Terrain_Modeler.las.html");

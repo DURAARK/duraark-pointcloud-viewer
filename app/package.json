@@ -1,11 +1,14 @@
 {
   "name": "duraark-pointcloud-viewer",
   "version": "0.1.0",
-  "description": "'potree' setup (including docker deployment)",
-  "main": "app/index.js",
+  "description": "3D viewer for E57 files (including viewing and data API).",
+  "main": "index.js",
   "scripts": {
-    "start": "node app/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build": "../scripts/docker-build-image.sh",
+    "docker-run": "../scripts/docker-run-image.sh",
+    "docker-rm": "../scripts/docker-rm-container.sh"
   },
   "repository": {
     "type": "git",
