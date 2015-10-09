@@ -1,0 +1,31 @@
+{
+  "name": "duraark-pointcloud-viewer",
+  "version": "0.1.0",
+  "description": "'potree' setup (including docker deployment)",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DURAARK/duraark-pointcloud-viewer.git"
+  },
+  "keywords": [
+    "duraark",
+    "e57",
+    "pointcloud"
+  ],
+  "author": "Martin Hecher <martin.hecher@fraunhofer.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DURAARK/duraark-pointcloud-viewer/issues"
+  },
+  "homepage": "https://github.com/DURAARK/duraark-pointcloud-viewer#readme",
+  "devDependencies": {
+    "body-parser": "^1.14.1",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5"
+  }
+}
