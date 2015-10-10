@@ -10,7 +10,7 @@ var express = require("express"),
     publicDir = process.argv[2] || __dirname + '/../www';
 
 app.get("/", function (req, res) {
-  res.redirect("./potree/examples/LAS12_Sample_withRGB_Quick_Terrain_Modeler.las.html");
+  res.redirect("./potree/examples/Nygade_Scan1005-1006.laz.html");
 });
 
 app.use(methodOverride());
